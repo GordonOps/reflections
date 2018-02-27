@@ -1,0 +1,100 @@
+Prompt: How did viewing a diff between two versions of a file help you see the bug
+	that was introduced?
+
+Upon Reflection:
+The function of diff was to computationally reduce the amount of irrelevant 
+	information that I had to process with my own eyes. By limiting my attention 
+	only to the lines that changed I was able to speed up my process by having to 
+	look at fewer lines. The difference in number of lines was around two orders of 
+	magnitude. 
+Moreover diff also arranged the changed lines side by side so that my visual 
+	process of comparing the information was streamlined.
+
+***
+
+Prompt: How could having easy access to the entire history of a file make you a
+	 more efficient programmer in the long term?
+
+Upon Reflection:
+The capacity to access any previous revision of a file could allow a style of 
+	programming which branches from known working versions. Having the freedom to 
+	take a risk because restoring to previous stable version without debugging is 
+	quite cheap allows for faster more natural coding by reducing the planning and
+	 revising otherwise needed. With version control one can experiment and return. 
+	 Furthermore, when optimizing code to run faster the ability to A B test the 
+	 codes performance is streamlined by having access to all previous versions of 
+	 the code. 
+
+***
+
+Prompt: What do you think are the pros and cons of manually choosing when to create 
+	a commit, like you do in Git, vs having versions automatically saved, like 
+	Google Docs does?
+
+Upon Reflection:
+	The benefit to manually saving is the freedom to impose a logical structure on 
+		the versions which in turn improves the ease of understanding changes 
+		between versions as well as using tools like diff to spot differences 
+		between versions.
+
+	The downside to manually saving is the introduction of potential user error,
+		ie. forgetting to save.
+
+	The benefit to automatically saving is the regularization of the amount of 
+		information changing between versions, it is known in advance how much has 
+		changed.
+
+	The downside to automatic saving is that small but critical changes may be 
+		missed by the saving rule. As well a change which accomplishes a single 
+		purpose may become seperated across one or several versions, or multiple 
+		purposeful changes could be in a single version making reducing the 
+		readability of the versions.
+
+***
+
+Prompt: Why do you think some version control systems, like Git, allow saving 
+	multiple files in one commit, while others, like Google Docs, treat each file 
+	separately?
+
+Upon Reflection:
+	For git, tracking changes to multiple files simulataneously makes sense for the 
+		users targeted who are developers that are possibly working on projects 
+		which assemble via more than one file.
+
+	In contrast Google Docs treats each file serparately since the targeted 
+		workflow is office apps which typically are saved an operate in a stand 
+		alone file.
+
+***
+
+Prompt: How can you use the commands git log and git diff to view the history of 
+	files?
+
+Upon Reflection:
+	git log command will reveal a list of commits giving me their id, author, time,
+	description. It's for me to use git diff on the various ids to investigate the 
+	detailed history of changes. A summary of the changes can be presented by 
+	adding the command --stats when calling log
+		e.g. type into the command line: 	git log --stats
+
+***
+
+Prompt: How might using version control make you more confident to make changes that could break something?
+
+Upon Reflection:
+	This was related to a part of my answer for a previous prompt. Knowing that you 
+	can revert to a correctly working version of your code, you should feel 
+	comfortable if the change you want requires a wholesale different direction 
+	than was previously taken to solve the problem. A big change of a direction is 
+	highly probable to break the whole of the project however, the impact is 
+	negligible since the restore point can save the project from destruction. 
+
+***
+
+Prompt: Now that you have your workspace set up, what do you want to try using Git for?
+
+Upon Reflection:
+	I want to use Git to help develop and release an open source tool that will 
+	help amateur podcasters save on their start up costs by automating an editing 
+	procedure which removes the hesitations from their speech, ie. um, uh, ah, or 
+	like.
