@@ -6,6 +6,12 @@ Upon Reflection:
 
 How is the staging area different from the working directory and the repository?
 What value do you think it offers?
+	Upon Reflection:
+		The staging area differs from the working directory and repository in the sense that it is selects some subset of the files in the working directory / repository in order to commit them. 
+		The value here is creating a natural process to record only the information relevant to the change you are committing. 
+		More over, suppose several issues were solved in several files. 
+		By not automatically committing all files, we gain the control to commit only those for which a single commit represents a logical change, then use further commits for the separate changes. 
+		We may want to work until the whole is functioning but commit the parts which made it up the whole. 
 
 How can you use the staging area to make sure you have one commit per logical
 change?
