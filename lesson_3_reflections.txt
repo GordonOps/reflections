@@ -1,1 +1,3 @@
 When would you want to create a remote repository rather than keeping all your work local?
+  Upon Reflection:
+  You would want to use a remote repository for any number of reasons. First of all for colaboration or to enable contributions from multiple computers. Another freedom afforded by remote repositories is the ability to have the work backed up online in case of a critical failure on your local computer whiping out access to your previous work. Finally you might wish to share your work widely and give it an open source license. In that case the most effective way is via the internet, as opposed to USB stick. 
