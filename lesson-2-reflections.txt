@@ -15,14 +15,32 @@ What value do you think it offers?
 
 How can you use the staging area to make sure you have one commit per logical
 change?
+	Upon Reflection:
+		You can use the command git diff --staged to check exactly what will be included in the new commit relative to the old commit. 
+		If you observe a single logical change then the staging area is good to go, otherwise you can add or remove files as needed. 
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
+	Upon Reflection:
+		A branch would help when adding a non-critical feature to the project. 
+		That way bug fixing can still go on for main, or additional features can be added in parallel, while the feature on the branch just made is prepared separately. 
 
 How do the diagrams help you visualize the branch structure?
+	Upon Reflection:
+		A diagram will help point out the common ancestors of branches. 
+		Also whether a checkout is actually on a branch. 
+		The diagram will help to anticipate which changes should appear at the tips of various branches while other changes may be excluded since they were created in parallel.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+	Upon Reflection:
+		The result of merging to branches is that one the branch already checked out blends its changes with the changes on the branch via comparison with their most recent common ancestor. We show this on the graph by moving the branch name of our checked out branch to the tip of the new commit representing the merge, as well as by circling the most recent parent.
 
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
+	Upon Reflection:
+		In favour of automatic merging is the time savings and the fact that little can actually go wrong. When you are responsible for getting involved your attention will be focused on the areas of conflict. The downside is that occasionally ambiguous order of changes or spurious connections may be missed by automatic merge. You don't have to know in detail the branch you are merging to before starting the process and finding the conflicts.
+
+		In favour of always manually merging is the ability to control the way the process will play out. The downside is detailed information about both branches must be had in advance. Moreover, it is up to the preparer to make every adjustment, even trivial ones, which could lead to human error. 
+
+	
