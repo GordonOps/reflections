@@ -1,3 +1,45 @@
 When would you want to create a remote repository rather than keeping all your work local?
   Upon Reflection:
-  You would want to use a remote repository for any number of reasons. First of all for colaboration or to enable contributions from multiple computers. Another freedom afforded by remote repositories is the ability to have the work backed up online in case of a critical failure on your local computer whiping out access to your previous work. Finally you might wish to share your work widely and give it an open source license. In that case the most effective way is via the internet, as opposed to USB stick. 
+  You would want to use a remote repository for any number of reasons. 
+  First of all for colaboration or to enable contributions from multiple computers. 
+  Another freedom afforded by remote repositories is the ability to have the work backed up online in case of a critical failure on your local computer whiping out access to your previous work. 
+  Finally you might wish to share your work widely and give it an open source license. 
+  In that case the most effective way is via the internet, as opposed to USB stick. 
+
+Why might you want to always pull changes manually rather than having Git
+automatically stay up-to-date with your remote repository?
+    Upon Reflection:
+    When pulling a change you have to resolve conflicts. 
+    If someone else is contributing to the project and your workflow was interrupted with a change that affects your own change that would be some kind of a disaster.
+    Better to pull before push and resolve conlicts as they stand along instead of try to do too much at once.
+
+Describe the differences between forks, clones, and branches.  When would you
+use one instead of another?
+	Upon Reflection:
+	Fork reproduces repositories and exist on Github and link back to their original repository. Clone can be operated on locally or on Github, it reproduces a repository. Branches label a set of commits in a repository. 
+
+What is the benefit of having a copy of the last known state of the remote
+stored locally?
+    Upon Reflection:
+    The benefit is that it permits the pull to behave in a clever way. Either the pull will fast forward merge is master is reachable or else it will make of the remote to first fetch and then resolve any conflicts by merging with master locally. A higher level of functionality.
+
+How would you collaborate without using Git or GitHub?  What would be easier,
+and what would be harder?
+    Upon Reflection:
+    Collaboration would require the use of at least one folder with a copy of every file for every in the repository to go along with every minor change. 
+    This would encourage simulataneous and parallel development (to reduce cumbersome transfers and expensive duplication) making each share more risky in stability. 
+    Parallel development and achieving consensus for how to combine parallel changes would be extremely cumbersome doing diffs in the shell, saving the results, using probably emails to track the paper trail of debate and finally consolidating the result as a report. 
+    Via Git, and Github, a finer grained collaboration can ensure that each change is logically based, 
+    reduce risks associated with refactoring, 
+    encourage consensus when merging parallel development will be expedited with the whole conversation automatically tracked and recorded, 
+    the benefits go on and on and on.
+
+When would you want to make changes in a separate branch rather than directly in
+master?  What benefits does each approach have?
+    Upon Reflection:
+    When collaborating it is best to merge to master via pull requests. 
+    This workflow requires changes to be made on a local serarate branch which are then pushed then subsequent pull request invites collaborators to comment on the changes before they are merged.
+    Especially when a merge may involve a conflict, 
+    merging onto master would be poor collaboration, 
+    better to merge onto your own branch that collaborators are following then push the branch again to invite comment
+    just to be sure that your conflict resolutions are are agreed upon by your collaborators. 
